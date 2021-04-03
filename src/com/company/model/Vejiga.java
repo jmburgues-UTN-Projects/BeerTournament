@@ -31,4 +31,8 @@ public class Vejiga {
     public Integer getVolumen(){
         return volumenActual;
     }
+
+    public Integer getCapacidadMax(){
+        return this.capacidadMax;
+    }
 }

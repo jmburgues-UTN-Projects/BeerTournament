@@ -62,6 +62,10 @@ public abstract class Humano {
         this.aBeber = aBeber;
     }
 
+    public void estadoVejiga(){
+        System.out.println("-estado de su vejiga " + this.vejiga.getVolumen() + "/" + this.vejiga.getCapacidadMax() + "-");
+    }
+
     public boolean orinar() {
         vejiga.vaciar();
         return this.aOrinar.Orinar();

@@ -67,17 +67,19 @@ public class Torneo<A,B> {
                 competidorB = i < equipoB.size() ? equipoB.get(i) : equipoB.get(0);
 
                 System.out.println("\n-- Se enfrentan " + competidorA.getNombre() + " contra " + competidorB.getNombre() + "\n");
-                count =1;
+                count=1;
 
                 while (!orinadoB && !orinadoA) {
 
-                    System.out.println("Cerveza nro "+count);
+                    System.out.println("Cerveza nro "+count+"\n-------------------------------------");
                     System.out.print(competidorA.getNombre()+": ");
                     orinadoA = competidorA.beber(this.tamanioVasoML);
+                    competidorA.estadoVejiga();
 
                     if(!orinadoA) {
                         System.out.print(competidorB.getNombre() +": ");
                         orinadoB = competidorB.beber(this.tamanioVasoML);
+                        competidorB.estadoVejiga();
                     }
 
                     count++;

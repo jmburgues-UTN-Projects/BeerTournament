@@ -33,7 +33,7 @@ public class Main {
                                                 (int)(Math.random() * (EDAD_MAXIMA - EDAD_MINIMA +1) + EDAD_MINIMA),
                                                 (int)(Math.random() * (PESO_MAXIMO - PESO_MINIMO +1) + PESO_MINIMO),
                                                 new OrinarEspartano(),
-                                                new BeberEspertano()));
+                                                new BeberEspertano(),(i*5)));
         }
 
     // Los ordeno por Peso
